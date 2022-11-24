@@ -213,7 +213,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-.soc::after:non(:last-child) {
+.soc::after:not(:last-child) {
   position: absolute;
   content: '';
   width: 22px;
