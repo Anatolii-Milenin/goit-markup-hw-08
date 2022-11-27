@@ -688,15 +688,18 @@ img {
     gap: 165px;
     justify-content: center;
     text-align: center;
+    align-items: baseline;
   }
 }
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-tablet {
     display: flex;
     justify-content: center;
     gap: 93px;
+    align-items: baseline;
+    text-align: start;
   }
-} */
+}
 .footer__logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -829,7 +832,10 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__mail {
+  .online-form {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
   }
 }
 .input-online {
@@ -893,11 +899,11 @@ img {
 .btn-online:focus {
   background-color: var(--active-bg-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .btn-online {
     display: block;
-    margin-top: 20px;
-    margin-left: 37%;
+    /* margin-top: 20px; */
+    /* margin-left: 37%; */
   }
 }
 /* @media screen and (min-width: 1200px) {
