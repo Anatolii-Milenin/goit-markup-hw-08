@@ -5,7 +5,6 @@
 }
 
 .feature__item {
-  // flex-basis: calc((100% - 3 * 30px) / 4);
   width: 100%;
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
@@ -17,7 +16,6 @@
 
 .feature__icon {
   display: flex;
-  // width: 270px;
   height: 120px;
   background: var(--second-bg-color);
   border-radius: 4px;

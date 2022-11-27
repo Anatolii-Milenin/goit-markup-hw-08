@@ -194,9 +194,6 @@ img {
   margin-bottom: 306px;
 }
 
-.site-item {
-}
-
 .site-list {
   margin-bottom: 32px;
 }
@@ -214,7 +211,6 @@ img {
   color: var(--title-text-color);
 }
 
-.site-link:hover,
 .site-link:focus {
   color: var(--accent-color);
 }
@@ -225,9 +221,6 @@ img {
 
 .menu-auth {
   margin-bottom: 64px;
-}
-
-.auth-item {
 }
 
 .auth-list {
@@ -263,9 +256,6 @@ img {
   gap: 20px;
   list-style: none;
   position: relative;
-}
-
-.soc-list {
 }
 
 .soc {

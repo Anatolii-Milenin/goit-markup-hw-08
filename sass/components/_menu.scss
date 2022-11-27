@@ -1,0 +1,148 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  &__logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+  &-word {
+    color: var(--primary-black-color);
+  }
+}
+
+.menu-open {
+  display: inline-flex;
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  margin-bottom: auto;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  background: var(--primary-white-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  @media screen and (min-width: 480px) {
+    max-width: 767px;
+  }
+}
+
+.menu-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.menu-close {
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+  border: none;
+  background-color: var(--primary-white-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.menu-site {
+  margin-bottom: 306px;
+}
+
+.site-list {
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.site-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.current {
+    color: var(--accent-color);
+  }
+}
+
+.menu-auth {
+  margin-bottom: 64px;
+}
+
+.auth-list {
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.menu-mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.menu-tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.soc-item {
+  width: 320px;
+  margin: o auto;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  position: relative;
+}
+
+.soc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+  &-list:not(:last-child)::after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
