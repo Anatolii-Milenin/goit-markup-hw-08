@@ -197,16 +197,24 @@
     color: rgba(255, 255, 255, 0.6);
   }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 480px) {
+  .input-online {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .input-online {
     width: 450px;
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .icon-online {
-    width: 450px;
+@media screen and (min-width: 1200px) {
+  .input-online {
+    width: 358px;
     margin-bottom: 20px;
   }
 }
@@ -230,6 +238,13 @@
     background-color: var(--active-bg-color);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .btn-online {
+    min-width: 200px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .btn-online {
     display: block;
