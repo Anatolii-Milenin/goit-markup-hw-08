@@ -26,7 +26,6 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  margin-left: 93px;
   &__link {
     display: block;
     padding-top: 32px;
@@ -66,8 +65,20 @@
 }
 
 @media screen and (min-width: 768px) {
-  .site-nav {
+  .header-nav {
     margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-auth {
+    margin-left: 90px;
   }
 }
 
@@ -100,7 +111,6 @@
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-    margin-left: 90px;
   }
 }
 
