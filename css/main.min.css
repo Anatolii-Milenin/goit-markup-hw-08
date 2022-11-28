@@ -684,6 +684,12 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .customers {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .customers__item {
   height: 92px;
 }

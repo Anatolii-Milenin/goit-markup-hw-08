@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .customers__item {
