@@ -161,6 +161,14 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
 }
 
 .icon-check {
